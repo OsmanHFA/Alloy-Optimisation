@@ -10,3 +10,4 @@
 /Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.pdb
 /Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/ref/AMLibrary.dll
 /Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.csproj.AssemblyReference.cache
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.sourcelink.json

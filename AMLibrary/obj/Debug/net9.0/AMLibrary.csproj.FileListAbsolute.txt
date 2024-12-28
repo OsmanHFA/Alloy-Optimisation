@@ -1,0 +1,12 @@
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/bin/Debug/net9.0/AMLibrary.deps.json
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/bin/Debug/net9.0/AMLibrary.dll
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/bin/Debug/net9.0/AMLibrary.pdb
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.AssemblyInfoInputs.cache
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.AssemblyInfo.cs
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.csproj.CoreCompileInputs.cache
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.dll
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/refint/AMLibrary.dll
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.pdb
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/ref/AMLibrary.dll
+/Users/ozzy/Desktop/C#/OsmanAmSolution/AMLibrary/obj/Debug/net9.0/AMLibrary.csproj.AssemblyReference.cache

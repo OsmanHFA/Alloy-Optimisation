@@ -27,3 +27,4 @@
 /Users/ozzy/Desktop/C#/OsmanAmSolution/Demo/bin/Debug/net9.0/runtimes/osx-x64/native/google-ortools-native.dylib
 /Users/ozzy/Desktop/C#/OsmanAmSolution/Demo/bin/Debug/net9.0/runtimes/osx-x64/native/libortools.9.dylib
 /Users/ozzy/Desktop/C#/OsmanAmSolution/Demo/bin/Debug/net9.0/runtimes/win-x64/native/google-ortools-native.dll
+/Users/ozzy/Desktop/C#/OsmanAmSolution/Demo/obj/Debug/net9.0/Demo.sourcelink.json

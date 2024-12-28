@@ -16,6 +16,15 @@ namespace AMLibrary {
         }
 
         public override string description => _machine.description;
+
+        // A helper method to traverse the chain
+        public virtual IList<string> GetFeatures() {
+            // If wrapped machine also has GetFeatures() method, call it
+            if (_machine is MachineDecorator decorator)
+                return decorator.GetFeatures();
+            else
+                return new List<string>();
+        }
     }
 
     public class QuadLaserDecorator : MachineDecorator {
@@ -30,6 +39,13 @@ namespace AMLibrary {
                 return base.description + " + Quad Laser";
             }
         }
+        public override IList<string> GetFeatures() {
+        // Start with the wrapped features
+        var baseFeatures = base.GetFeatures();
+        baseFeatures.Add("Quad Laser");
+        return baseFeatures;
+        }
+
     }
 
     public class ThermalImagingCameraDecorator : MachineDecorator {
@@ -42,6 +58,12 @@ namespace AMLibrary {
             get {
                 return base.description + " + Thermal Imaging Camera";
             }
+        }
+        public override IList<string> GetFeatures() {
+        var baseFeatures = base.GetFeatures();
+        
+        baseFeatures.Add("Thermal Imaging Camera");
+        return baseFeatures;
         }
     }
 
@@ -57,6 +79,12 @@ namespace AMLibrary {
                 return base.description + " + Photodiodes";
             }
         }
+        public override IList<string> GetFeatures() {
+        var baseFeatures = base.GetFeatures();
+        
+        baseFeatures.Add("Photodiodes");
+        return baseFeatures;
+        }
     }
 
     public class ReducedBuildVolumeDecorator : MachineDecorator {
@@ -69,6 +97,12 @@ namespace AMLibrary {
             get {
                 return base.description + " + Reduced Build Volume";
             }
+        }
+        public override IList<string> GetFeatures() {
+        var baseFeatures = base.GetFeatures();
+        
+        baseFeatures.Add("Reduced Build Volume");
+        return baseFeatures;
         }
     }
 
@@ -83,6 +117,12 @@ namespace AMLibrary {
             get {
                 return base.description + " + Powder Recirculation System";
             }
+        }
+        public override IList<string> GetFeatures() {
+        var baseFeatures = base.GetFeatures();
+        
+        baseFeatures.Add("Powder Recirculation System");
+        return baseFeatures;
         }
     }
 

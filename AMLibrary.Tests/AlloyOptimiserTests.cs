@@ -49,7 +49,7 @@ namespace AMLibrary.Tests {
             new Element
             {
                 Name = "Ni",
-                Alpha = 0.0m, // Ni doesn't contribute to creep
+                Alpha = 0.0m, // Ni is base elememnt and does not contribute to creep
                 Cost = 8.9m,
                 MinPercentage = 0.0m,
                 MaxPercentage = 100.0m,
@@ -57,7 +57,7 @@ namespace AMLibrary.Tests {
             }
         };
 
-        // 2) Instantiate optimiser and produce the "best" alloy
+        // 2) Instantiate optimiser and produce the best alloy
             _optimiser = new AlloyOptimiser(_elements, "Ni");
             _bestAlloy = _optimiser.FindOptimalAlloy(18);
         }

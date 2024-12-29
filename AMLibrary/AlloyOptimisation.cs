@@ -19,7 +19,7 @@ namespace AMLibrary {
         public Alloy(Dictionary<Element, decimal> composition, string baseElement) {
             _composition = composition;
             _baseElement = baseElement;
-            // CheckComposition(); // Removed and moved to unit tests
+            // CheckComposition(); // Removed and changed to unit test
         }
         // Exposing composition so unit tests can see it
         public IReadOnlyDictionary<Element, decimal> Composition => _composition;

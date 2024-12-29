@@ -27,7 +27,8 @@ namespace AMLibrary.Tests {
         [Fact]
         public static void TestMediumPowerMachineWithFeatures() {
             var builder = new AmMachineBuilder(new MediumPowerMachine());
-
+            
+            // Build custom machine using builder pattern
             var machine = builder
                 .AddReducedBuildVolume()
                 .AddQuadLaser()

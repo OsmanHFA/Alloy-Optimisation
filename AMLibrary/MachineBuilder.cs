@@ -1,39 +1,72 @@
 namespace AMLibrary {
     // Builder class
-    public class AmMachineBuilder {
-        private AmMachine machine;
+     public class AmMachineBuilder
+    {
+        private readonly AmMachine baseMachine;
+        private readonly AmMachineFeatures features;
 
         public AmMachineBuilder(AmMachine baseMachine) {
-            machine = baseMachine;
+            this.baseMachine = baseMachine;
+            this.features = new AmMachineFeatures();
         }
 
         public AmMachineBuilder AddQuadLaser() {
-            machine = new QuadLaserDecorator(machine);
+            features.HasQuadLaser = true;
             return this;
         }
 
         public AmMachineBuilder AddThermalImaging() {
-            machine = new ThermalImagingCameraDecorator(machine);
+            features.HasThermalImaging = true;
             return this;
         }
 
         public AmMachineBuilder AddPhotodiodes() {
-            machine = new PhotodiodesDecorator(machine);
+            features.HasPhotodiodes = true;
             return this;
         }
 
         public AmMachineBuilder AddReducedBuildVolume() {
-            machine = new ReducedBuildVolumeDecorator(machine);
+            features.HasReducedBuildVolume = true;
             return this;
         }
 
         public AmMachineBuilder AddPowderRecirculation() {
-            machine = new PowderRecirculationSystemDecorator(machine);
+            features.HasPowderRecirculation = true;
             return this;
         }
 
-        public AmMachine Build() {
-            return machine;
+        public CustomAmMachine Build() {
+            return new CustomAmMachine(baseMachine, features);
+        }
+    }
+
+    public class AmMachineFeatures
+    {
+        public bool HasQuadLaser { get; set; }
+        public bool HasThermalImaging { get; set; }
+        public bool HasPhotodiodes { get; set; }
+        public bool HasReducedBuildVolume { get; set; }
+        public bool HasPowderRecirculation { get; set; }
+        
+        public decimal CalculateFeaturesCost() {
+            decimal cost = 0;
+            if (HasQuadLaser) cost += 225000;
+            if (HasThermalImaging) cost += 54000;
+            if (HasPhotodiodes) cost += 63000;
+            if (HasReducedBuildVolume) cost += 75000;
+            if (HasPowderRecirculation) cost += 82000;
+            return cost;
+        }
+
+        public string GetFeaturesDescription() {
+            var features = new List<string>();
+            if (HasQuadLaser) features.Add("Quad Laser");
+            if (HasThermalImaging) features.Add("Thermal Imaging");
+            if (HasPhotodiodes) features.Add("Photodiodes");
+            if (HasReducedBuildVolume) features.Add("Reduced Build Volume");
+            if (HasPowderRecirculation) features.Add("Powder Recirculation");
+            
+            return features.Count > 0 ? " with " + string.Join(", ", features) : "";
         }
     }
 }

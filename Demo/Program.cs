@@ -12,12 +12,6 @@ public class Program {
         Console.WriteLine("Description: " + machine.description);
         Console.WriteLine("Cost: " + machine.cost());
 
-        machine = new PhotodiodesDecorator(machine);
-
-        if (machine is MachineDecorator topDecorator) {
-            var features = topDecorator.GetFeatures();
-            Console.WriteLine("Features: " + string.Join(", ", features));
-        }
         
         // Task 2
         var elements = new List<Element>

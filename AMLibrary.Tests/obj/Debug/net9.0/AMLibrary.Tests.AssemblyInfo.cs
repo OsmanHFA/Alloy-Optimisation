@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AMLibrary.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a606dd9996c2f65a640166062be35a64c2dfa98a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae08fa71f296d388b598dfbe18bbcfad7847d859")]
 [assembly: System.Reflection.AssemblyProductAttribute("AMLibrary.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AMLibrary.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,6 @@
 namespace AMLibrary {
     // Builder class
-     public class AmMachineBuilder
-    {
+     public class AmMachineBuilder {
         private readonly AmMachine baseMachine;
         private readonly AmMachineFeatures features;
 
@@ -66,7 +65,10 @@ namespace AMLibrary {
             if (HasReducedBuildVolume) features.Add("Reduced Build Volume");
             if (HasPowderRecirculation) features.Add("Powder Recirculation");
             
-            return features.Count > 0 ? " with " + string.Join(", ", features) : "";
+            if (features.Count > 0) {
+                return " with " + string.Join(", ", features);
+            }
+            else { return "";}
         }
     }
 }

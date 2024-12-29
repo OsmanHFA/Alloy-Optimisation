@@ -3,7 +3,7 @@ using Google.OrTools.LinearSolver;
 namespace AMLibrary {
     // Element class stores element properties
     public class Element {
-        public string Name {get; set;}
+        public required string Name {get; set;}
         public  decimal Alpha {get; set;}
         public decimal Cost {get; set;}
         public decimal MinPercentage {get; set;}

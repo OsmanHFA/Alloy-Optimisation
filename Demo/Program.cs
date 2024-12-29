@@ -5,12 +5,13 @@ using AMLibrary;
 public class Program {
     public static void Main() {
         // Task 1
-        AmMachine machine = new LowPowerMachine();
+        var builder = new AmMachineBuilder(new MediumPowerMachine());
 
-        machine = new QuadLaserDecorator(machine);
-        
+        var machine = builder.AddQuadLaser()
+                             .AddPhotodiodes()
+                             .Build();
         Console.WriteLine("Description: " + machine.description);
-        Console.WriteLine("Cost: " + machine.cost());
+        Console.WriteLine("Cost: " + machine.cost()); // should be £838,000
         
         // Task 2
         var elements = new List<Element>

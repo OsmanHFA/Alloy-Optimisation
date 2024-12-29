@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AMLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d21d2a9df6774e4845fc048b40f93a191ab2f891")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af6f52f05fc6bab91ce6a541cddcf635487248ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("AMLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AMLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

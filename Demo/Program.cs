@@ -11,7 +11,6 @@ public class Program {
         
         Console.WriteLine("Description: " + machine.description);
         Console.WriteLine("Cost: " + machine.cost());
-
         
         // Task 2
         var elements = new List<Element>

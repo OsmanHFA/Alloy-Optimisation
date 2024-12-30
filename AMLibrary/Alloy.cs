@@ -1,17 +1,5 @@
-using Google.OrTools.LinearSolver;
-
 namespace AMLibrary {
-    // Element class stores element properties
-    public class Element {
-        public required string Name {get; set;}
-        public  decimal Alpha {get; set;}
-        public decimal Cost {get; set;}
-        public decimal MinPercentage {get; set;}
-        public decimal MaxPercentage {get; set;}
-        public decimal StepSize {get; set;}
-    }
-    
-    // Alloy class represents alloy composition and their properties
+    // Alloy class calculates creep resistance and cost
     public class Alloy {
         private readonly Dictionary<Element, decimal> _composition;
         private readonly string _baseElement;
@@ -32,5 +20,4 @@ namespace AMLibrary {
             return  _composition.Sum(x => x.Key.Cost * x.Value / 100);
         }
     }
-    
 }

@@ -1,5 +1,5 @@
 namespace AMLibrary {
-    public class CustomAmMachine : AmMachine{
+    public class CustomAmMachine : AmMachine {
         private readonly AmMachine baseMachine;
         private readonly AmMachineFeatures features;
 
